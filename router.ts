@@ -7,11 +7,11 @@ router
     .get('/', (ctx) => {
         ctx.response.body = 'Welcome to notes API';
     })
-    .get('/notes', RouteController.getRoutes)
-    .get('/notes/:id', RouteController.getRoute)
-    .post('/notes', RouteController.createRoute)
-    .put('/notes/:id', RouteController.uptadeRoute)
-    .delete('/notes/:id', RouteController.deleteRoute) 
+    .get('/routes', RouteController.getRoutes)
+    .get('/routes/:id', RouteController.getRoute)
+    .post('/routes', RouteController.createRoute)
+    .put('/routes/:id', RouteController.uptadeRoute)
+    .delete('/routes/:id', RouteController.deleteRoute) 
 export default router
 
 
